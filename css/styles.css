@@ -37,6 +37,12 @@ ul {
 	padding-inline-start: 0px;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 .container {
 	width: 1200px;
 	margin-left: auto;
@@ -201,7 +207,7 @@ ul {
 }
 
 .benefits-box {
-	width: calc((100%-3 * 30) / 4);
+	width: calc((100% - 3 * 30px) / 4);
 }
 
 .benefits-box:not(:last-child) {
@@ -301,7 +307,7 @@ ul {
 }
 
 .directions-item {
-	width: calc((100%-2 * 30) / 3);
+	width: calc((100% - 2 * 30px) / 3);
 }
 
 .items {
@@ -353,7 +359,7 @@ ul {
 
 .team-item:not(:last-child) {
 	margin-right: 30px;
-	width: calc((100%-3 * 30) / 4);
+	width: calc((100% - 3 * 30px) / 4);
 }
 
 .team-subtitle {
@@ -427,7 +433,7 @@ ul {
 }
 
 .clients-item {
-	width: calc((100%-5 * 30) / 6);
+	width: calc((100% - 5 * 30px) / 6);
 }
 
 .clients-item:not(:last-child) {
@@ -485,12 +491,10 @@ ul {
 }
 
 .examples-item {
-	display: block;
-	width: 370px;
+	width: calc((100% - 2 * 30px) / 3);
 	margin-right: 30px;
 	margin-bottom: 30px;
 	border: 1px solid var(--border-examples);
-	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .examples-item:nth-child(3n) {
@@ -534,9 +538,14 @@ ul {
 	display: none;
 }
 
+.examples-section {
+	padding: 20px 24px;
+}
+
 .examples-title {
-	margin-top: 20px;
 	margin-bottom: 4px;
+	margin-block-start: 0px;
+	/* margin-block-end: 0px; */
 
 	color: var(--secondary-black-color);
 	font-weight: 700;
@@ -546,7 +555,7 @@ ul {
 }
 .example-button {
 	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 
 	color: var(--primary-grey-color);
 	font-size: 16px;
@@ -640,6 +649,8 @@ ul {
 }
 
 .social-logo {
+	width: 20px;
+	height: 20px;
 	fill: var(--primary-white-color);
 }
 
